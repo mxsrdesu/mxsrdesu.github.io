@@ -1,15 +1,19 @@
 {
   "name": "mxsrdesu",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "sass": "sass scss/main.scss style.min.css --style compressed --watch"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "solid-js": "^1.9.3"
+  },
   "devDependencies": {
-    "sass": "^1.70.0"
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-plugin-solid": "^2.11.0"
   }
 }
