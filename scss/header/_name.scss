@@ -1,8 +1,7 @@
-@use '../vars';
+@use '../vars' as *;
 
 .name-wrapper {
-
-  color: vars.$fg;
+  color: $fg;
 
   &-name,
   &-occupation {
@@ -13,9 +12,17 @@
   &-name {
     font-size: 32px;
     margin-bottom: 15px;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &-occupation {
     font-size: 24px;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }

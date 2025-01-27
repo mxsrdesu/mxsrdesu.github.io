@@ -1,4 +1,4 @@
-@use '../vars';
+@use '../vars' as *;
 
 .social-links {
   display: flex;
@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: vars.$fg;
+  color: $fg;
   text-decoration: none;
   font-size: 18px;
   padding: 8px;
@@ -23,35 +23,35 @@
   }
 
   &:hover {
-    background: vars.$bg2;
+    background: $bg2;
     transform: translateX(5px);
 
     &.cv-link {
-      color: vars.$bright-green;
+      color: $bright-green;
     }
 
     &[href*="github"] {
-      color: vars.$bright-purple;
+      color: $bright-purple;
     }
 
     &[href*="linkedin"] {
-      color: vars.$bright-blue;
+      color: $bright-blue;
     }
 
     &[href*="t.me"] {
-      color: vars.$telegram-blue;
+      color: $telegram-blue;
     }
 
     &[href*="leetcode"] {
-      color: vars.$bright-yellow;
+      color: $bright-yellow;
     }
 
     &[href*="codewars"] {
-      color: vars.$bright-red;
+      color: $bright-red;
     }
 
     &[href*="mailto"] {
-      color: vars.$bright-red;
+      color: $bright-red;
     }
   }
 }
@@ -59,6 +59,36 @@
 .cv-status {
   margin-left: auto;
   font-size: 14px;
-  color: vars.$bright-green;
+  color: $bright-green;
   opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+
+  @include laptop {
+    gap: 25px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @include mobile {
+    gap: 15px;
+  }
+
+  &__link {
+    color: $fg;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+
+    &:hover {
+      color: $bright-aqua;
+    }
+  }
 }
