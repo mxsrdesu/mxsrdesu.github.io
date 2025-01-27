@@ -1,0 +1,21 @@
+@use '../vars';
+
+.name-wrapper {
+
+  color: vars.$fg;
+
+  &-name,
+  &-occupation {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &-name {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  &-occupation {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,64 @@
+@use '../vars';
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: vars.$fg;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+
+  i {
+    width: 20px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: vars.$bg2;
+    transform: translateX(5px);
+
+    &.cv-link {
+      color: vars.$bright-green;
+    }
+
+    &[href*="github"] {
+      color: vars.$bright-purple;
+    }
+
+    &[href*="linkedin"] {
+      color: vars.$bright-blue;
+    }
+
+    &[href*="t.me"] {
+      color: vars.$telegram-blue;
+    }
+
+    &[href*="leetcode"] {
+      color: vars.$bright-yellow;
+    }
+
+    &[href*="codewars"] {
+      color: vars.$bright-red;
+    }
+
+    &[href*="mailto"] {
+      color: vars.$bright-red;
+    }
+  }
+}
+
+.cv-status {
+  margin-left: auto;
+  font-size: 14px;
+  color: vars.$bright-green;
+  opacity: 0.8;
+}
