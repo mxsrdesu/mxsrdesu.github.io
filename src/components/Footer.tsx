@@ -8,7 +8,7 @@ const Footer = () => {
         </span>{' '}
         Sirenev. All rights reserved.
       </p>
-      <div id="js-off">You shoudn't be reading this. Lol. Who disables their JS in browser lmao</div>
+      {/* <div id="js-off">You shoudn't be reading this. Lol. Who disables their JS in browser lmao</div> */}
     </footer>
   );
 };
