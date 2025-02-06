@@ -1,0 +1,20 @@
+.container {
+  padding: 60px 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}

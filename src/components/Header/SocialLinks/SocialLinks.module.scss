@@ -1,0 +1,56 @@
+$primary-color: #ebdbb2;
+$hover-bg: #504945;
+$cv-color: #b8bb26;
+$github-color: #d3869b;
+$linkedin-color: #83a598;
+$tme-color: #7aa2c4;
+$leetcode-color: #fabd2f;
+$mail-color: #fb4934;
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+
+  i {
+    width: 20px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: $hover-bg;
+    transform: translateX(5px);
+  }
+
+  // Mixin to generate color styles for specific links
+  @mixin link-color($selector, $color) {
+    &[href*="#{$selector}"] {
+      i {
+        color: $color;
+      }
+
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+
+  // Applying mixin for each link type
+  @include link-color("github", $github-color);
+  @include link-color("linkedin", $linkedin-color);
+  @include link-color("t.me", $tme-color);
+  @include link-color("leetcode", $leetcode-color);
+  @include link-color("mailto", $mail-color);
+}

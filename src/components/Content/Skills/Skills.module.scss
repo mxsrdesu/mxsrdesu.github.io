@@ -1,0 +1,34 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skillItem {
+  min-width: calc(100% / 8);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #665c54;
+  border-radius: 8px;
+
+  .skillIcon {
+    max-width: 32px;
+    max-height: 32px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
