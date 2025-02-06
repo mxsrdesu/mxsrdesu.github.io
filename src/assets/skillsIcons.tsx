@@ -5289,7 +5289,6 @@ export const skillsIcons: Record<string, JSX.Element> = {
           color="#000"
           font-weight="400"
           font-family="sans-serif"
-          overflow="visible"
           fill-rule="nonzero"
         ></path>
         <path d="M48.39 60.716c14.004-11.44 27.702-23.278 42.011-34.384-7.505 11.533-15.224 22.913-22.729 34.445-6.437.03-12.875.03-19.282-.061zM60.228 67.092c6.468 0 12.905 0 19.342.092-14.095 11.38-27.732 23.309-42.071 34.384 7.505-11.533 15.224-22.943 22.729-34.476z"></path>
