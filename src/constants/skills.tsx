@@ -33,7 +33,24 @@ export const skills: Skill[] = [
     ],
   },
   {
-    title: 'Frameworks',
+    title: 'Databases',
+    items: [
+      {
+        icon: skillsIcons.mysql,
+        name: 'MySQL',
+      },
+      {
+        icon: skillsIcons.postgresql,
+        name: 'PostgreSQL',
+      },
+      {
+        icon: skillsIcons.redis,
+        name: 'Redis',
+      },
+    ],
+  },
+  {
+    title: 'Libraries & Frameworks',
     items: [
       {
         icon: skillsIcons.solid,
@@ -67,9 +84,18 @@ export const skills: Skill[] = [
         icon: skillsIcons.mobx,
         name: 'MobX',
       },
+    ],
+  },
+  {
+    title: 'Testing',
+    items: [
       {
         icon: skillsIcons.jest,
         name: 'Jest',
+      },
+      {
+        icon: skillsIcons.vitest,
+        name: 'Vitest',
       },
       {
         icon: skillsIcons.cypress,
@@ -123,14 +149,6 @@ export const skills: Skill[] = [
       {
         icon: skillsIcons.socketio,
         name: 'WebSockets',
-      },
-      {
-        icon: skillsIcons.postgresql,
-        name: 'SQL',
-      },
-      {
-        icon: skillsIcons.redis,
-        name: 'Redis',
       },
     ],
   },

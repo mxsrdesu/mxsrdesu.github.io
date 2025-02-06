@@ -4,7 +4,6 @@ import Block from '@components/UI/Block';
 import styles from './Skills.module.scss';
 import { skills } from '@constants/skills';
 
-
 const Skills = () => {
   return (
     <Block>
@@ -21,9 +20,7 @@ const Skills = () => {
               <For each={items}>
                 {({ icon, name }) => (
                   <div class={styles.skillItem}>
-                    {icon && (
-                      <div class={styles.skillIcon}>{icon}</div>
-                    )}
+                    {icon && <div class={styles.skillIcon}>{icon}</div>}
                     <div class={styles.skillName}>{name}</div>
                   </div>
                 )}
