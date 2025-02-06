@@ -1,6 +1,6 @@
-import SocialLinks from './SocialLinks';
-import NameCard from './NameCard';
 import styles from './Header.module.scss';
+import NameCard from './NameCard';
+import SocialLinks from './SocialLinks';
 
 const Header = () => {
   return (
@@ -11,4 +11,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

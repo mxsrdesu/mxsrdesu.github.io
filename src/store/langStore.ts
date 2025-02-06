@@ -24,4 +24,4 @@ const setLanguage = (newLang: Language) => {
   setLang(newLang);
 };
 
-export { lang, setLanguage }; 
+export { lang, setLanguage };

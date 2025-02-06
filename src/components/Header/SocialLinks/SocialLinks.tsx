@@ -1,9 +1,8 @@
-import { For } from 'solid-js';
 import Block from '@UI/Block';
 import Link from '@UI/Link';
 import { socialLinks } from '@constants/socialLinks';
+import { For } from 'solid-js';
 import styles from './SocialLinks.module.scss';
-
 
 const SocialLinks = () => {
   return (
@@ -20,4 +19,4 @@ const SocialLinks = () => {
   );
 };
 
-export default SocialLinks; 
+export default SocialLinks;

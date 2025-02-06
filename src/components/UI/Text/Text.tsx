@@ -1,4 +1,4 @@
-import { Component, JSX } from 'solid-js';
+import type { Component, JSX } from 'solid-js';
 import styles from './Text.module.scss';
 
 interface Props {
@@ -7,11 +7,7 @@ interface Props {
 }
 
 const Text: Component<Props> = ({ children, class: className }) => {
-  return (
-    <p class={`${styles.text} ${className || ''}`}>
-      {children}
-    </p>
-  );
+  return <p class={`${styles.text} ${className || ''}`}>{children}</p>;
 };
 
 export default Text;

@@ -1,8 +1,8 @@
-import { For } from 'solid-js';
-import Title from '@components/UI/Title';
 import Block from '@components/UI/Block';
-import styles from './Skills.module.scss';
+import Title from '@components/UI/Title';
 import { skills } from '@constants/skills';
+import { For } from 'solid-js';
+import styles from './Skills.module.scss';
 
 const Skills = () => {
   return (

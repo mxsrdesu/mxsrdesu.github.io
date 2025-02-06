@@ -1,6 +1,5 @@
-import type { Skill } from '@customTypes/skill';
 import { skillsIcons } from '@assets/skillsIcons';
-
+import type { Skill } from '@customTypes/skill';
 
 export const skills: Skill[] = [
   {

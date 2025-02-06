@@ -6,7 +6,11 @@ interface Props {
   fullWidth?: boolean;
 }
 
-const Block: ParentComponent<Props> = ({ class: className, children, fullWidth = false }) => {
+const Block: ParentComponent<Props> = ({
+  class: className,
+  children,
+  fullWidth = false,
+}) => {
   return (
     <div
       classList={{
@@ -20,4 +24,4 @@ const Block: ParentComponent<Props> = ({ class: className, children, fullWidth =
   );
 };
 
-export default Block; 
+export default Block;

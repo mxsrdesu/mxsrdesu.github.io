@@ -1,6 +1,6 @@
 import Block from '@UI/Block';
-import Title from '@UI/Title';
 import Text from '@UI/Text';
+import Title from '@UI/Title';
 import { getMyAge } from '@utils/getMyAge';
 import styles from './About.module.scss';
 

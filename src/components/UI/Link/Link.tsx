@@ -1,4 +1,4 @@
-import { Component, JSX } from 'solid-js';
+import type { Component, JSX } from 'solid-js';
 import styles from './Link.module.scss';
 
 interface Props extends JSX.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -7,10 +7,7 @@ interface Props extends JSX.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const Link: Component<Props> = ({ children, class: className, ...props }) => {
   return (
-    <a
-      {...props}
-      class={`${styles.link} ${className || ''}`}
-    >
+    <a {...props} class={`${styles.link} ${className || ''}`}>
       {children}
     </a>
   );

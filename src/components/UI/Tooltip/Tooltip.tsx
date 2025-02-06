@@ -11,10 +11,12 @@ const Tooltip: Component<Props> = ({ text, children, position = 'top' }) => {
   return (
     <div class={styles.tooltipContainer}>
       <span class={styles.tooltipChildren}>{children}</span>
-      <div classList={{
-        [styles.tooltip]: true,
-        [styles[position || 'top']]: true
-      }}>
+      <div
+        classList={{
+          [styles.tooltip]: true,
+          [styles[position || 'top']]: true,
+        }}
+      >
         {text}
       </div>
     </div>

@@ -8,14 +8,20 @@ interface Props {
   bottomMargin?: boolean;
 }
 
-const Title: ParentComponent<Props> = ({ class: className, hasGradient = false, size = 'medium', bottomMargin = false, children }) => {
+const Title: ParentComponent<Props> = ({
+  class: className,
+  hasGradient = false,
+  size = 'medium',
+  bottomMargin = false,
+  children,
+}) => {
   return (
     <div
       classList={{
         [styles[size]]: !!size,
         [className || '']: !!className,
         [styles.gradientLine]: hasGradient,
-        [styles.bottomMargin]: bottomMargin
+        [styles.bottomMargin]: bottomMargin,
       }}
     >
       {children}
@@ -23,4 +29,4 @@ const Title: ParentComponent<Props> = ({ class: className, hasGradient = false, 
   );
 };
 
-export default Title; 
+export default Title;
