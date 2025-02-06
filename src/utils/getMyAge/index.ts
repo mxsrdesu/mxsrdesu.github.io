@@ -1,0 +1,1 @@
+export { getMyAge } from './getMyAge';
